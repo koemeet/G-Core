@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>G Core - 0.1</title>
+		
+		<script src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/g-core/src/g.core-0.1.js"></script>
+		
+		<script type="text/javascript">
+			G.require("G.menu.Menu");
+			
+			$(document).ready(function() {
+				var menu = $("#g-menu").get(0);
+				var menu = new G.menu.Menu(menu, {
+					
+				});
+				
+				menu.open(0, 1, 0);
+			});
+		</script>
+	</head>
+	<body>
+		<h1>G Core 0.1</h1>
+		
+		<p>jsjsjsjs</p>
+		
+		<button type="button" id="speak">Speak</button>
+		
+		<ul id="g-menu" class="main">
+            
+            <li><a href="#">Schoenen</a>
+                <ul class="sub">
+                    <li data-section="adidas"><a href="#">Adidas</a>
+                        <ul>
+                            <li><a href="#">Air Max</a>
+                                <ul class="sub">
+                                    <li>Rood</li>
+                                    <li>Groen</li>
+                                    <li>Blauw</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Nike</a>
+                        <ul>
+                            <li><a href="#">Air Max</a>
+                                <ul class="sub">
+                                    <li>Rood</li>
+                                    <li>Groen</li>
+                                    <li>Blauw</li>
+                                </ul>
+                            </li>
+                        </ul></li>
+                    <li>Poema</li>
+                </ul>
+            </li>
+            
+            <li class="main"><a href="#">Hoofditem 2</a>
+                <ul class="sub">
+                    <li>Sub item 1</li>
+                    <li>Sub item 2</li>
+                    <li>Sub item 3</li>
+                </ul>
+            </li>
+            
+        </ul>
+	</body>
+</html>
